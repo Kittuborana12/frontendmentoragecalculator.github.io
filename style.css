@@ -1,0 +1,105 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+  }
+@font-face {
+    font-family: Myfont;
+    src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Off-white);
+}
+.container{
+margin: 100px auto;
+background-color: var(--White);
+padding: 30px;
+width: 440px;
+max-width: 80%;
+position:relative;
+border-bottom-right-radius:130px ;
+}
+
+.index{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+  /* border-bottom: 2px solid var(--Off-white); */
+  margin-bottom: 20px;
+  
+  
+}
+.submit{
+    /* border-bottom: 2px solid var(--Off-white); */
+    border-bottom: 2px solid var(--Off-white);
+   position: absolute;
+   width: 70%;
+   top: 120px;
+   height: 2px;
+}
+.head{
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-weight: bold;
+}
+input{
+    width: 80px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: 2px solid var(--Off-white);
+    outline: none;
+    color:hsl(0, 1%, 44%); 
+    font-weight: bold;
+    font-size: 18px;
+}
+input:focus {
+    border: 2px solid var(--Purple);
+  }
+  small {
+    color: red;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }  
+  .submit-btn{
+    border-radius: 50% 50%;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--Purple);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    /* right: 30px; */
+    top: 85px;
+    right: 44px;
+   
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-color: black;
+  }
+  .output span{
+    font-size: 2.75rem;
+    color: var(--Purple);
+    font-style: italic;
+  }
+  .index1{
+    display: block;
+  }
